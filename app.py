@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 model = load_model('next_word_lstm.keras')
 
-with open('tokenizer.pickle', 'rb') as handle:
+with open('tokenizer.pkl', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
 #Function to predict next word
